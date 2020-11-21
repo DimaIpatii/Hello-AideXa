@@ -1,0 +1,44 @@
+@import '~normalize.css';
+
+
+*,
+*::before,
+*::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    margin: 0px;
+    padding: 0px;
+
+    min-width: 100%;
+    width: 100vw;
+    max-width: 100%;
+
+    min-height: 100%;
+    height: 100vh;
+    max-width: 100%;
+
+    overflow: auto;
+}
+
+
+button,
+input{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+h1,h2,h3,h4,h5,h6{ 
+    margin: 0px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}

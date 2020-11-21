@@ -1,0 +1,44 @@
+.btn{
+    &_filter-open{
+        @include size(4rem);
+        background-color: transparent;
+    }
+    &__icon_open-filter{
+        background-color: none;
+        color: white;
+        font-size: 25px;
+    }
+    
+    &_buy{
+        background-color: $btn-buy-bg;
+        color: $btn-buy-text;
+        font-size: 1.6rem;
+        border-radius: 5rem;
+        padding: 1rem 1.8rem;
+    }
+
+    &_more{
+        @include size(7rem, 6rem);
+        font-size: 1.6rem;
+        background-color: $btn-more-bg;
+        color: $btn-more-text;
+        border-bottom-right-radius: 1rem;
+        border-top-left-radius: 100%;
+        padding: 1rem;
+        padding-bottom: 1.5rem;
+
+        
+    }
+    &_clouse{
+        background-color: $btn-clouse-bg ;
+        @include size(7rem, 6rem);
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 100%;
+        font-size: 1.6rem;
+        color: $btn-clouse-text;
+        padding-left: 1.5rem;
+        padding-top: 1.5rem;
+    }
+}
+
+

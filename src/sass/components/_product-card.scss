@@ -1,0 +1,127 @@
+
+.product-card{
+    @include size(95%, max-content);
+    position: relative;
+    background-color: $product-front-bg;
+    box-shadow: 0px 3px 7px 0px #c1c1c1;
+    padding: .5rem;
+    border-radius: 1rem;
+    margin-bottom: 5%;
+    
+    &__details{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    @media only screen and (min-width: 768px) {
+        width: 33.6rem;
+    }
+}
+
+
+// Main Side
+// **************************************
+.product-front{
+    &__image{
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+}
+
+
+.prodyct-info{
+    padding: 1rem;
+}
+
+.prodyct-info-head{
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+
+    &__image{
+        @include size(4rem);
+        border-radius: 10rem;
+        overflow: hidden;
+    }
+
+    &__name{
+        margin-left: 1rem;
+    }
+}
+.prodyct-info-body{
+    position: relative;
+    
+    &__btn-buy{
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+    &__btn-more{
+        position: absolute;
+        bottom: -1.5rem;
+        right: -1.5rem;
+    }
+}
+
+.price{
+    position: relative;
+
+    &__discount{
+        position: absolute;
+        top: -1.5rem;
+        right: 0px;
+    }
+}
+
+
+// Additional Details Side
+// **************************************
+.product-details{
+    @include size(100%);
+    border-radius: 1rem;
+
+    background-color: $product-details-bg;
+    padding: 2rem;
+
+    transition: all .5s;
+
+    &__btn{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    &__caption{
+        margin-bottom: 2rem;
+    }
+    &__description{
+        max-height: 50%;
+        overflow-x: auto;
+    }
+}
+
+.product-details-tags{
+    overflow-y: auto;
+
+    &__tag-item{
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+// Toggle for Additional details:
+// *********************************************
+.hide {
+    clip-path: circle(0% at 100% 100%);
+    z-index: -1;
+    transition: all .5s;
+}
+
+.show{
+    clip-path: circle(150% at 100% 100%);
+    z-index: 100;
+    transition: all .5s;
+}
+
+
+

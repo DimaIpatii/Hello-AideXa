@@ -1,0 +1,51 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+// *****************************************
+// Dropdown
+// *****************************************
+.dropdown-header__caption{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $caption-light;
+}
+
+.filter-item{
+    color: $filter-item-text;
+}
+
+// *****************************************
+// Product Card
+// *****************************************
+.product-name{
+    font-size: 2rem;
+    color:$caption-dark;
+}
+
+.price{
+    font-size: 1.6rem;
+    color:$price-current;
+
+    &__discount_del{
+        font-size: 1.2rem;
+        color: $price-discount;
+    }
+}
+
+.product-details{
+    &__caption{
+        font-size: 1.8rem;
+        color: $caption-dark;
+
+    }
+    &__description{
+        font-size: 1.6rem;
+        color: $description-text;
+    }
+}

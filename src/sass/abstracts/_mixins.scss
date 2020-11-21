@@ -1,0 +1,25 @@
+// *********************************
+// Sizes:
+// *********************************
+
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+// *********************************
+// Positioning:
+// *********************************
+
+@mixin flex-center {
+    display : flex;
+    flex-direction: center;
+    align-items: center;
+}
+
+@mixin position-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
