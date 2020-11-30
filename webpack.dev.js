@@ -7,7 +7,7 @@ const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
     entry : {
-        app : './src/react/app.js'
+        app : './src/react/index.js'
     },
     mode : 'development',
     devtool : 'inline-source-map',
@@ -31,7 +31,7 @@ module.exports = merge(common, {
                 test : /\.s[ac]ss$/i,
                 exclude : /node_modules/,
                 use : [
-                    { loader : MiniCssExtractPlugin.loader },
+                    {loader : MiniCssExtractPlugin.loader },
                     {loader : 'css-loader', options : {importLoaders : 1, sourceMap: true}},
                     {loader : 'sass-loader', options : {sourceMap: true}},
                 ]

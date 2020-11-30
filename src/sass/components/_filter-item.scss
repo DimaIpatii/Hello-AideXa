@@ -6,7 +6,8 @@
     background-color: $filter-item-bg;
     border-radius: 10rem;
     box-shadow: 0px 1.1px 3px -1px grey;
-
+    cursor: pointer;
+    
     &_small{
         padding: 1rem 1rem;
     }

@@ -1,7 +1,8 @@
 .main{
-    margin-top: 10rem;
+    margin-top: 7rem;
 
     @media only screen and (min-width: 768px) {
+        margin-top: 10rem;
         width: 97%;
     }
     @media only screen and (min-width: 1300px) {

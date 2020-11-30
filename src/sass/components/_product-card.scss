@@ -1,6 +1,6 @@
 
 .product-card{
-    @include size(95%, max-content);
+    @include size(30rem, max-content);
     position: relative;
     background-color: $product-front-bg;
     box-shadow: 0px 3px 7px 0px #c1c1c1;

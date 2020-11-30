@@ -6,7 +6,7 @@ const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 
 module.exports = {
     entry : {
-        app : './src/react/app.js'
+        app : './src/react/index.js'
     },
     plugins : [
         new HtmlWebpackPlugin({
