@@ -78,8 +78,11 @@ const App = () => {
     // ******************************************************
 
     /* Fetch Data */
-    useEffect(async () => {
-        setSearchData(await getFetchedData());
+    useEffect(() => {
+        async function useProductData () {
+            setSearchData( await getFetchedData());
+        }
+        useProductData ()
     },  []);
 
     /* Set Filter Chips */
